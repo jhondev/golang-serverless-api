@@ -1,4 +1,4 @@
-#Golang Serverless Api
+# Golang Serverless Api
 
 This is a quick example of an api supporting simple http json and aws lambda serverless applying separation of concerns.
 
@@ -9,9 +9,9 @@ This implementation is based on this blog posts
 
 and this talks 
 
-###GopherCon UK 2018: Kat Zien - How do you structure your Go apps?
+### GopherCon UK 2018: Kat Zien - How do you structure your Go apps?
 `https://youtu.be/VQym87o91f8`
 
-###Golang UK Conference 2016 - Marcus Olsson - Building an enterprise service in Go
+### Golang UK Conference 2016 - Marcus Olsson - Building an enterprise service in Go
 `https://youtu.be/twcDf_Y2gXY`
 
