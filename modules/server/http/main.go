@@ -21,7 +21,3 @@ func RunServer() {
 
 	log.Fatal(http.ListenAndServe(":8080", router)) // Note, the port is usually gotten from the environment.
 }
-
-func PrintHttp() {
-	println("Print from http")
-}
