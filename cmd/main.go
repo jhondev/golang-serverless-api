@@ -1,10 +1,22 @@
 package main
 
-import "serverlessapi/pkg/testpkg1"
-import "serverlessapi/pkg/server/http"
+import (
+	"flag"
+	"serverlessapi/modules/server/aws"
+	"serverlessapi/modules/server/http"
+)
+
+var isDev *bool
+
+func init() {
+	isDev = flag.Bool("dev", false, "value for dev mode")
+	flag.Parse()
+}
 
 func main() {
-	testpkg1.PrintMessage()
-	http.PrintHttp()
-	http.RunServer()
+	if *isDev {
+		http.RunServer()
+	} else {
+		aws.StartLambda()
+	}
 }
